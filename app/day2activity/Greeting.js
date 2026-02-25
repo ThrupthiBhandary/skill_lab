@@ -5,4 +5,4 @@ export default function Greeting({name,age})
             Hello {name}, you are {age} years old.
         </div>
     )
-}
+}  

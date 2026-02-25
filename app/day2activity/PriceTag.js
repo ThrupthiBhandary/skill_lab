@@ -5,4 +5,4 @@ export default function PriceTag({currency,price})
             {currency} {price}
         </div>
     )
-}
+}   

@@ -17,7 +17,7 @@ function Userdata({ name, role, array = []  }) {
              <div>
                 {array.map((s)=>
                 {
-                    return <ul>{s}</ul>
+                    return <ul key={s}>{s}</ul>
                 })}
             </div>
 
@@ -33,9 +33,11 @@ export default function page() {
                 <Link href='/contact' style={{ color: "pink" }}> contact</Link><br />
                 <button><Link href='/contact' style={{ color: "pink" }}> go to contact</Link></button>
                 <br/>
-                <Link href='/activity' style={{ color: "pink" }}>Day 2 activity</Link><br />
+                <Link href='/day2activity' style={{ color: "pink" }}>Day 2 activity</Link><br />
                 <Link href='./day3' >day3 work</Link><br/>
-                <Link href='./day3activity'>Day 3 activity</Link>
+                <Link href='./day3activity'>Day 3 activity</Link> <br/>
+                  <Link href='./day3_tailwind'>Day 3 tailwind</Link>
+               
             </div>
 
             <div style={{ display: "flex", gap: 20 }}>

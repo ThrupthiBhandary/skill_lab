@@ -1,6 +1,7 @@
 
 "use client"
 import { useState} from 'react';
+
 export default function page()
 {
     const[text,setText]=useState('hello');
@@ -23,6 +24,7 @@ export default function page()
         <div>
            <h2 onClick={changeText}>{text}</h2> 
            <button onClick={countIncrement} style={{color:`${color}`}}>Like:{count}</button>
+           
         </div>
     )
 }
