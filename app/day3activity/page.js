@@ -8,10 +8,11 @@ import Exercise3 from './Exercise3';
 import Level2Ex6 from './Level2Ex6';
 import Ex7 from './Ex7';
 import Ex9_10 from './EX9_10'
-
+import Ex11to15 from './Ex11to15'
+import UseEffectActivity from './UseEffectActivity'
 export default function page() {
 
-    const [color, setColor] = useState('pink');
+    const [color, setColor] = useState('black');
     function changeColor() {
         if (color == "pink") {
             setColor("black")
@@ -23,7 +24,7 @@ export default function page() {
     }
 
         return (
-            <div style={{ backgroundColor: `${color}` }}>
+            <div style={{ backgroundColor: `${color}` }} className="grid h-screen">
                 <Exercise1 />
                 <Exercise2 />
                 <Exercise3 />
@@ -31,6 +32,8 @@ export default function page() {
                 <Level2Ex6/>
                 <Ex7/>
                 <Ex9_10/>
+                <Ex11to15/>
+                <UseEffectActivity/>
             </div>
         )
     }
